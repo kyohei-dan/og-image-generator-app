@@ -25,7 +25,7 @@ export default function Render() {
   const handleChangeText = (event: { target: HTMLInputElement }) => {
     setText({ ...text, [event.target.name]: event.target.value });
   };
-  const FONT_URL = "./NotoSansJP-Bold.ttf";
+  const FONT_URL = "/NotoSansJP-Bold.ttf";
   const notoSans = fetch(FONT_URL).then((res) =>
     res.arrayBuffer()
   );
