@@ -14,7 +14,7 @@ export default function Root() {
   return (
     <div className="contaner">
       <header className="header">
-        <h1 className="title">OG Imageつくれるよ</h1>
+        <h1 className="title">OG Imageつくれる</h1>
         <nav>
           <ul className="navigation-list">
             {routes.map((route) => (
