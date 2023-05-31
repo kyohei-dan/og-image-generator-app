@@ -1,38 +1,37 @@
-@import url("https://fonts.googleapis.com/css2?family=Noto+Sans");
-
 * {
   box-sizing: border-box;
   margin: 0;
   padding: 0;
 }
 
-body {
-  font-family: "Noto Sans", sans-serif;
-}
-
 #root {
   display: contents;
 }
 
+body {
+  font-family: "Noto Sans JP", sans-serif;
+}
+
 .contaner {
   display: grid;
-  grid-template-columns: 320px 1fr;
+  grid-template-columns: 260px 1fr;
   min-height: 100dvh;
 }
 
 .header {
-  align-content: start;
-  background-color: #f8f8f8;
-  display: grid;
-  gap: 16px;
-  height: 100dvh;
-  padding: 24px 16px;
   position: sticky;
   top: 0;
+  display: grid;
+  align-content: start;
+  gap: 16px;
+  padding: 24px 16px;
+  height: 100dvh;
+  background-color: #171e30;
 }
 
 .title {
-  font-size: 1.5rem;
+  color: #b5b7bc;
+  font-size: 1.2rem;
 }
 
 .navigation-list {
@@ -40,27 +39,29 @@ body {
 }
 
 .navigation-link {
-  border-radius: 6px;
-  color: inherit;
   display: block;
   padding: 8px 16px;
+  border-radius: 6px;
+  color: #b5b7bc;
   text-decoration: none;
   transition: background-color 100ms ease-in-out;
 }
 
 .navigation-link.-active {
   background-color: #eaeaea;
+  color: #000;
 }
 
 .navigation-link:hover {
   background-color: #e1e1e1;
+  color: #000;
 }
 
 .main {
-  align-content: start;
   display: grid;
-  gap: 32px;
   justify-self: center;
+  align-content: start;
+  gap: 32px;
   padding: 32px;
   width: min(1080px, 100%);
 }
@@ -87,22 +88,22 @@ body {
 }
 
 .input {
+  padding: 8px 12px;
   border: 1px solid #ddd;
   border-radius: 8px;
   font-size: 20px;
-  padding: 8px 12px;
 }
 
 .button {
+  margin-top: 16px;
+  padding: 16px 24px;
   background-color: #ddd;
   border: none;
   border-radius: 8px;
   color: #222;
-  cursor: pointer;
   font-size: 1.2rem;
   font-weight: bold;
-  margin-top: 16px;
-  padding: 16px 24px;
+  cursor: pointer;
   transition: background-color 100ms ease-in-out;
 }
 
